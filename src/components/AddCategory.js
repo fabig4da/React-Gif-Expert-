@@ -14,12 +14,14 @@ export  const AddCategory =({setCategories})=> {
         }
         
     }
+    const mms = "Escriba una categoria. Ejempplo: Amor"
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="form-add"onSubmit={handleSubmit}>
             <input
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
+                placeholder={mms}
             />
         </form>
     )
